@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odpočet času</title>
+  <style>
+    body {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black; /* Farba pozadia */
+}
+
+#countdown_day, #countdown_time {
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    width: 100%;
+    display: block; /* Display on separate lines */
+}
+
+@media (max-width: 600px) {
+    #countdown_day, #countdown_time {
+        font-size: 1.5em;
+    }
+}
+
+  </style>
+</head>
+<body>
+    <div style="padding-top: 30%; height: fit-content;">
+
+        <div id="countdown_day"></div>
+        <div id="countdown_time"></div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
